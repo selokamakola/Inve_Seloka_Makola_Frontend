@@ -1,0 +1,13 @@
+<div class="shell">
+    <h3>View Submitted Forms</h3>
+    <ul *ngIf="registrations?.length != 0" class="heroes">
+        <li *ngFor="let reg of registrations" (click)="viewDetails(reg)">
+            <span class="badge">{{reg.name}} &nbsp; {{reg.surname}}</span> {{reg.idNum}}
+        </li> 
+    </ul>
+
+    <div style="text-align: center;" *ngIf="registrations?.length == 0">
+        No users are registered Yet!
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="back()">Back</button>
+</div>

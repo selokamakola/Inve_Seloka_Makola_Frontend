@@ -1,0 +1,25 @@
+<div class="container">
+      <div id="id01" class="modal"> 
+        <div class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label> <br>
+            <input type="text" placeholder="Enter Username" name="uname" [(ngModel)]="username" required>
+            <br>
+            <label for="psw"><b>Password</b></label> <br>
+            <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="password" required>
+            <br>
+            <span *ngIf="errLogIn" class="err-logIn">Username or Password Incorrect</span>
+            <br>
+            <button type="submit" (click)="login()">Login</button>
+            <br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div> 
+        </div>
+      </div> 
+</div>

@@ -1,0 +1,19 @@
+<div class="shell">
+    <h3>Registrtaion Details</h3>
+    <div class="row">
+        <div class="col-sm-5">
+            <label for="name">Name</label><br><br>
+            <label for="Sunrname">Sunrname</label><br><br>
+            <label for="Sunrname">ID Number</label><br><br>
+            <label for="Sunrname">Email</label><br><br>
+        </div>
+
+        <div class="col-sm-7">
+            <input type="text" [(ngModel)]="userDetails.name"><br><br>
+            <input type="text" [(ngModel)]="userDetails.surname"><br><br>
+            <input type="text" [(ngModel)]="userDetails.idNum"><br><br>    
+            <input type="text" [(ngModel)]="userDetails.email"><br><br>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="back()">Back</button>
+</div>
